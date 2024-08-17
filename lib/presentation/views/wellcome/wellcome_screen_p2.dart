@@ -1,10 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shopping_list_v2/assets/assets.dart';
 
-class WellcomeScrennP1 extends StatelessWidget {
-  const WellcomeScrennP1({super.key});
+class WellcomeScrennP2 extends StatelessWidget {
+  const WellcomeScrennP2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -36,14 +36,14 @@ class WellcomeScrennP1 extends StatelessWidget {
             child: Column(
               children: [
                 Image.asset(
-                  AssetsData.light().images.wellcome_vector_1,
+                  AssetsData.light().images.wellcome_vector_2,
                   scale: 2,
                 ),
                 const SizedBox(
                   height: 50,
                 ),
                 const Text(
-                  "برنامه ریزی خرید ها",
+                  "مدیریت  هزینه خرید",
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -54,7 +54,7 @@ class WellcomeScrennP1 extends StatelessWidget {
                   height: 30,
                 ),
                 const Text(
-                  "شما میتوانید خرید های هر روزی که میخواهید را اضافه و برای آنها تاریخ بزارید تا به شما یاد آوری شود...",
+                  "شما میتوانید هزینه خرید های انجام شده را به صورت ماهانه داشته باشید تا بتوانید آنهارو مدیریت کنید...",
                   textAlign: TextAlign.right,
                   textDirection: TextDirection.rtl,
                   style: TextStyle(
@@ -81,19 +81,19 @@ class WellcomeScrennP1 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
-                            width: 26.17,
+                            width: 6.54,
                             height: 6.54,
                             decoration: const BoxDecoration(
-                              color: Color.fromRGBO(114, 101, 226, 1),
+                              color: Color.fromRGBO(114, 101, 226, 0.4),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(50)),
                             ),
                           ),
                           Container(
-                            width: 6.54,
+                            width: 26.17,
                             height: 6.54,
                             decoration: const BoxDecoration(
-                              color: Color.fromRGBO(114, 101, 226, 0.4),
+                              color: Color.fromRGBO(114, 101, 226, 1),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(50)),
                             ),
@@ -112,7 +112,7 @@ class WellcomeScrennP1 extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        context.go('/wellcome2');
+                        context.go('/wellcome3');
                       },
                       child: Container(
                         width: 45,
