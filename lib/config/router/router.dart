@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:shopping_list_v2/presentation/views/home_screen.dart';
 import 'package:shopping_list_v2/presentation/views/splash_screen.dart';
 import 'package:shopping_list_v2/presentation/views/wellcome/wellcome_screen_p1.dart';
 import 'package:shopping_list_v2/presentation/views/wellcome/wellcome_screen_p2.dart';
@@ -23,16 +24,16 @@ class Routes {
         path: '/wellcome3',
         builder: (context, state) => const WellcomeScrennP3(),
       ),
+      GoRoute(
+        path: '/home',
+        builder: (context, state) => const HomeScreen(),
+      ),
       // GoRoute(
       //   path: '/home',
       //   builder: (context, state) => BlocProvider(
       //     create: (context) => HomeBloc(),
       //     child: const HomeScreen(),
       //   ),
-      // ),
-      // GoRoute(
-      //   path: '/analyze',
-      //   builder: (context, state) => const AnalyzeScreen(),
       // ),
     ],
   );

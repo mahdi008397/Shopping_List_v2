@@ -4,7 +4,7 @@
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
-        
+
 class Assets extends StatelessWidget {
   final AssetsData assets;
   final Widget child;
@@ -16,7 +16,8 @@ class Assets extends StatelessWidget {
   });
 
   static AssetsData of(BuildContext context) {
-    final widget = context.dependOnInheritedWidgetOfExactType<_InheritedAssets>();
+    final widget =
+        context.dependOnInheritedWidgetOfExactType<_InheritedAssets>();
     return widget?.assets ?? AssetsData.light();
   }
 
@@ -38,16 +39,20 @@ class _InheritedAssets extends InheritedWidget {
   });
 
   @override
-  bool updateShouldNotify(covariant _InheritedAssets oldWidget) => assets != oldWidget.assets;
+  bool updateShouldNotify(covariant _InheritedAssets oldWidget) =>
+      assets != oldWidget.assets;
 }
 
 class AssetsData {
   static AssetsData? _light;
   static AssetsData? _dark;
 
-  factory AssetsData.light() => _light ??= AssetsData._(brightness: Brightness.light);
-  factory AssetsData.dark() => _dark ??= AssetsData._(brightness: Brightness.dark);
-  factory AssetsData.brightness(Brightness brightness) => brightness == Brightness.light ? AssetsData.light() : AssetsData.dark();
+  factory AssetsData.light() =>
+      _light ??= AssetsData._(brightness: Brightness.light);
+  factory AssetsData.dark() =>
+      _dark ??= AssetsData._(brightness: Brightness.dark);
+  factory AssetsData.brightness(Brightness brightness) =>
+      brightness == Brightness.light ? AssetsData.light() : AssetsData.dark();
 
   final Brightness _brightness;
 
@@ -66,7 +71,7 @@ class _assets_fonts_dart {
 
   _assets_fonts_dart._({
     required Brightness brightness,
-  })  : _brightness = brightness;
+  }) : _brightness = brightness;
 
   final lalesaz_regular = 'Lalezar';
   final yekan = 'Yekan';
@@ -77,11 +82,17 @@ class _assets_images_dart {
 
   _assets_images_dart._({
     required Brightness brightness,
-  })  : _brightness = brightness;
+  }) : _brightness = brightness;
 
+  // splash
   final splash_back = 'assets/images/splash-back.png';
   final splash_vector = 'assets/images/splash-vector.png';
+  // wellcome
   final wellcome_vector_1 = 'assets/images/wellcome-vector-1.png';
   final wellcome_vector_2 = 'assets/images/wellcome-vector-2.png';
   final wellcome_vector_3 = 'assets/images/wellcome-vector-3.png';
+  // home page
+  final stor_icon = 'assets/images/stor-icon.png';
+  final home_vector = 'assets/images/home-vector.png';
+  final edit_icon = 'assets/images/edit-icon.png';
 }

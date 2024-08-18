@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:go_router/go_router.dart';
 import 'package:shopping_list_v2/assets/assets.dart';
 
 class WellcomeScrennP3 extends StatelessWidget {
@@ -111,14 +113,19 @@ class WellcomeScrennP3 extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Container(
-                      width: 45,
-                      height: 45,
-                      decoration: const BoxDecoration(
-                        color: Color.fromRGBO(113, 101, 226, 1),
-                        borderRadius: BorderRadius.all(Radius.circular(50)),
+                    GestureDetector(
+                      onTap: () {
+                        context.go('/home');
+                      },
+                      child: Container(
+                        width: 45,
+                        height: 45,
+                        decoration: const BoxDecoration(
+                          color: Color.fromRGBO(113, 101, 226, 1),
+                          borderRadius: BorderRadius.all(Radius.circular(50)),
+                        ),
+                        child: const Icon(Icons.arrow_forward_ios_rounded),
                       ),
-                      child: const Icon(Icons.arrow_forward_ios_rounded),
                     ),
                   ],
                 ),
