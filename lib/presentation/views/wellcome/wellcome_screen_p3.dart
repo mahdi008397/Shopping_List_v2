@@ -40,23 +40,25 @@ class WellcomeScrennP3 extends StatelessWidget {
                 const SizedBox(
                   height: 50,
                 ),
-                const Text(
+                Text(
                   "بزن بریــــم!",
                   style: TextStyle(
                     fontSize: 30,
+                    fontFamily: AssetsData.light().fonts.lalesaz_regular,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromRGBO(114, 101, 226, 1),
+                    color: const Color.fromRGBO(114, 101, 226, 1),
                   ),
                 ),
                 const SizedBox(
                   height: 30,
                 ),
-                const Text(
+                Text(
                   "حالا که با این برنامه آشنا شدی بزن بریم لیست خریدو آماده کنیم... ",
                   textAlign: TextAlign.right,
                   textDirection: TextDirection.rtl,
                   style: TextStyle(
-                    color: Color.fromRGBO(114, 101, 226, 1),
+                    fontFamily: AssetsData.light().fonts.yekan,
+                    color: const Color.fromRGBO(114, 101, 226, 1),
                     fontSize: 17,
                     fontWeight: FontWeight.w400,
                   ),
@@ -65,11 +67,12 @@ class WellcomeScrennP3 extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text(
+                    Text(
                       "گذشتن",
                       style: TextStyle(
                         fontSize: 15,
-                        color: Color.fromRGBO(114, 101, 226, 1),
+                        fontFamily: AssetsData.light().fonts.yekan,
+                        color: const Color.fromRGBO(114, 101, 226, 1),
                         fontWeight: FontWeight.w500,
                       ),
                     ),

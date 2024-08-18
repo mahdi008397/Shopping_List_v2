@@ -42,23 +42,25 @@ class WellcomeScrennP2 extends StatelessWidget {
                 const SizedBox(
                   height: 50,
                 ),
-                const Text(
+                Text(
                   "مدیریت  هزینه خرید",
                   style: TextStyle(
                     fontSize: 30,
+                    fontFamily: AssetsData.light().fonts.lalesaz_regular,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromRGBO(114, 101, 226, 1),
+                    color: const Color.fromRGBO(114, 101, 226, 1),
                   ),
                 ),
                 const SizedBox(
                   height: 30,
                 ),
-                const Text(
+                Text(
                   "شما میتوانید هزینه خرید های انجام شده را به صورت ماهانه داشته باشید تا بتوانید آنهارو مدیریت کنید...",
                   textAlign: TextAlign.right,
                   textDirection: TextDirection.rtl,
                   style: TextStyle(
-                    color: Color.fromRGBO(114, 101, 226, 1),
+                    fontFamily: AssetsData.light().fonts.yekan,
+                    color: const Color.fromRGBO(114, 101, 226, 1),
                     fontSize: 17,
                     fontWeight: FontWeight.w400,
                   ),
@@ -67,11 +69,12 @@ class WellcomeScrennP2 extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text(
+                    Text(
                       "گذشتن",
                       style: TextStyle(
                         fontSize: 15,
-                        color: Color.fromRGBO(114, 101, 226, 1),
+                        fontFamily: AssetsData.light().fonts.yekan,
+                        color: const Color.fromRGBO(114, 101, 226, 1),
                         fontWeight: FontWeight.w500,
                       ),
                     ),

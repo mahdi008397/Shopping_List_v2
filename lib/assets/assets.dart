@@ -68,7 +68,8 @@ class _assets_fonts_dart {
     required Brightness brightness,
   })  : _brightness = brightness;
 
-  final sf_pro_display_regular_ttf = 'assets/fonts/sf_pro_display_regular.ttf';
+  final lalesaz_regular = 'Lalezar';
+  final yekan = 'Yekan';
 }
 
 class _assets_images_dart {

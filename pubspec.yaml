@@ -33,3 +33,11 @@ flutter:
 
   assets:
     - assets/images/
+
+  fonts:
+    - family: Lalezar
+      fonts:
+        - asset: assets/fonts/Lalezar-Regular.ttf
+    - family: Yekan
+      fonts:
+        - asset: assets/fonts/Yekan Boom.ttf

@@ -42,23 +42,25 @@ class WellcomeScrennP1 extends StatelessWidget {
                 const SizedBox(
                   height: 50,
                 ),
-                const Text(
+                Text(
                   "برنامه ریزی خرید ها",
                   style: TextStyle(
                     fontSize: 30,
+                    fontFamily: AssetsData.light().fonts.lalesaz_regular,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromRGBO(114, 101, 226, 1),
+                    color: const Color.fromRGBO(114, 101, 226, 1),
                   ),
                 ),
                 const SizedBox(
                   height: 30,
                 ),
-                const Text(
+                Text(
                   "شما میتوانید خرید های هر روزی که میخواهید را اضافه و برای آنها تاریخ بزارید تا به شما یاد آوری شود...",
                   textAlign: TextAlign.right,
                   textDirection: TextDirection.rtl,
                   style: TextStyle(
-                    color: Color.fromRGBO(114, 101, 226, 1),
+                    fontFamily: AssetsData.light().fonts.yekan,
+                    color: const Color.fromRGBO(114, 101, 226, 1),
                     fontSize: 17,
                     fontWeight: FontWeight.w400,
                   ),
@@ -67,11 +69,12 @@ class WellcomeScrennP1 extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text(
+                    Text(
                       "گذشتن",
                       style: TextStyle(
                         fontSize: 15,
-                        color: Color.fromRGBO(114, 101, 226, 1),
+                        fontFamily: AssetsData.light().fonts.yekan,
+                        color: const Color.fromRGBO(114, 101, 226, 1),
                         fontWeight: FontWeight.w500,
                       ),
                     ),
