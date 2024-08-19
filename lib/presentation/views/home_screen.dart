@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:shopping_list_v2/assets/assets.dart';
@@ -84,8 +86,8 @@ class HomeScreen extends StatelessWidget {
                               height: 60,
                             ),
                             Container(
-                              width: 10,
-                              height: 10,
+                              width: 8,
+                              height: 8,
                               decoration: const BoxDecoration(
                                 color: Color.fromRGBO(131, 129, 255, 1),
                                 borderRadius:
@@ -289,6 +291,58 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: ClipRRect(
+        borderRadius: const BorderRadius.all(Radius.circular(66)),
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaY: 10, sigmaX: 10),
+          child: Container(
+            width: 380,
+            height: 56,
+            decoration: BoxDecoration(
+              color: const Color.fromRGBO(156, 144, 255, 0.20),
+              borderRadius: const BorderRadius.all(Radius.circular(66)),
+              border: Border.all(color: Colors.white, width: 1),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 50),
+                  child: Text(
+                    "مدیریت هزینه",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                      fontFamily: AssetsData.light().fonts.yekan,
+                      color: const Color.fromRGBO(131, 129, 255, 1),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 190,
+                  height: 56,
+                  decoration: BoxDecoration(
+                    color: const Color.fromRGBO(131, 129, 255, 1),
+                    borderRadius: const BorderRadius.all(Radius.circular(220)),
+                    border: Border.all(color: Colors.white, width: 1),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "خرید ها",
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                          fontFamily: AssetsData.light().fonts.yekan,
+                          color: Colors.white),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }

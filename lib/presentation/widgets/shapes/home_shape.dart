@@ -15,9 +15,9 @@ class HomeShapeClipper extends CustomClipper<Path> {
     path.lineTo(w, 60);
     path.quadraticBezierTo(w, 30, w - 30, 30);
     path.lineTo((w / 2) + 40, 30);
-    path.quadraticBezierTo((w / 2) + 20, 30, (w / 2) + 15, 20);
-    path.quadraticBezierTo((w / 2) + 10, 10, (w / 2), 10);
-    path.quadraticBezierTo((w / 2) - 10, 10, (w / 2) - 15, 20);
+    path.quadraticBezierTo((w / 2) + 20, 30, (w / 2) + 15, 22);
+    path.quadraticBezierTo((w / 2) + 10, 15, (w / 2), 15);
+    path.quadraticBezierTo((w / 2) - 10, 15, (w / 2) - 15, 22);
     path.quadraticBezierTo((w / 2) - 20, 30, (w / 2) - 40, 30);
     path.lineTo(30, 30);
 
